@@ -46,8 +46,12 @@
     gap: 30px;
     padding: 15px;
     background-color: #1f2d4a;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  
+
   .navbar a {
     text-decoration: none;
     color: white;
