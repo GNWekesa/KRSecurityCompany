@@ -38,9 +38,11 @@
   }
   
   /* Navbar */
-  .navbar {
+/* Navbar */
+.navbar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Vertically center items */
     gap: 30px;
     padding: 15px;
     background-color: #1f2d4a;
@@ -57,12 +59,20 @@
     color: #F1C40F;
   }
   
+  .nav-logo {
+    height: 40px; /* adjust size */
+    width: auto;
+    margin-right: 20px; /* space between the logo and links */
+  }  
+  
   /* Hero Section */
-  .hero {
+/* Hero Section */
+.hero {
     background-color: #e8ecf4;
     text-align: center;
     padding: 80px 20px;
     color: #0A1F44;
+    position: relative;
   }
   
   .hero h1 {
@@ -72,6 +82,17 @@
   
   .hero p {
     font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .hero img {
+    width: 100%;
+    max-width: 600px; /* Set max width for image */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow */
+    margin-top: 20px;
   }
   
   /* About Section */
@@ -85,6 +106,69 @@
     font-size: 28px;
     color: #0A1F44;
     margin-bottom: 15px;
+  }
+  /* Services Section */
+.services {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .services h2 {
+    font-size: 28px;
+    color: #0A1F44;
+    margin-bottom: 15px;
+  }
+  
+  .services ul {
+    list-style: disc;
+    margin-left: 20px;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  /* Why Choose Us Section */
+  .why-choose-us {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f0f2f7;
+    border-left: 5px solid #F1C40F;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 28px;
+    color: #0A1F44;
+    margin-bottom: 15px;
+  }
+  
+  .why-choose-us ul {
+    list-style: square;
+    margin-left: 20px;
+    line-height: 1.8;
+  }
+  
+  /* Mission and Vision Section */
+  .mission-vision {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-top: 2px solid #0A1F44;
+    border-bottom: 2px solid #0A1F44;
+  }
+  
+  .mission-vision h2 {
+    font-size: 24px;
+    color: #0A1F44;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .mission-vision p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.7;
   }
   
   /* Footer */
@@ -153,4 +237,268 @@
   .footer-bottom-bar a:hover {
     text-decoration: underline;
   }
+  /*end of footer styling*/
+
+  /*SERVICES PAGE*/
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #0A1F44;
+    padding: 10px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+    background-color: #1f2d4a;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #F1C40F;
+  }
+  
+  nav .active { 
+    color: #F1C40F;
+  }
+  /*using the active class to visually indicate the current page the user is on*/
+  
+  /* Main Content */
+  main {
+    padding: 40px 20px;
+  }
+  
+  .services-section {
+    background-color: #e8ecf4;
+    padding: 40px 20px;
+    
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #0A1F44;
+    margin-bottom: 40px;
+  }
+  
+  /* Service Article Styling */
+  .service {
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service h2 {
+    font-size: 28px;
+    color: #0A1F44;
+    margin-bottom: 15px;
+  }
+  
+  .service p {
+    font-size: 16px;
+    color: #333;
+  }
+/*end of services page styling*/
+
+/* Style for Careers Page Section */
+/* Careers Page Section */
+.careers {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-left: 5px solid #F1C40F;
+    border-right: 5px solid #F1C40F;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .careers h2 {
+    font-size: 28px;
+    color: #0A1F44;
+    margin-bottom: 15px;
+  }
+  
+  .careers p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #0A1F44;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #F1C40F;
+  }
+  
+  /* Submit Button */
+  button[type="submit"] {
+    background-color: #0A1F44;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #F1C40F;
+    color: #0A1F44;
+  }
+/*end of Careers Page styling */
+
+/* style for contact Page Styles */
+/* Contact Page Styles */
+.contact-section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+  
+  .contact-section h2 {
+    font-size: 28px;
+    color: #0A1F44;
+    margin-bottom: 15px;
+  }
+  
+  .contact-section p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .contact-form {
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-info-box {
+    flex: 1 1 300px;
+    background-color: #f0f2f7;
+    padding: 25px;
+    border-left: 4px solid #F1C40F;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+  
+  .contact-info-box h3 {
+    color: #0A1F44;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #0A1F44;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #F1C40F;
+  }
+  
+  /* Contact Form Button */
+  .contact-form button[type="submit"] {
+    background-color: #0A1F44;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    background-color: #F1C40F;
+    color: #0A1F44;
+  }
+ /* end of style for contact Page Styles */

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers | KR Security Company</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your main CSS file -->
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="images/logo.png" alt="the logo" class="nav-logo">
+      <a href="index.html">Home</a>
+      <a href="services.html">Our Services</a>
+      <a href="careers.html" class="active">Careers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="careers">
+      <h2>Careers at KR Security Company</h2>
+      <p>We are always looking for talented individuals to join our team. If you're interested in working with us, please fill out the form below and attach your CV.</p>
+
+      <form action="submit_application.php" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="Your email address">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="Tell us why you'd be a great fit for the role" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="cv">Attach Your CV</label>
+          <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx" required>
+        </div>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>KR Security Company</h3>
+        <p>Protecting what matters most — your safety is our priority. We provide cutting-edge security solutions across residential, commercial, and industrial sectors.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>Email: info@krsecurity.com</p>
+        <p>Phone: +254 700 000 000</p>
+        <p>Location: Nairobi, Kenya</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <p>&copy; 2025 KR Security Company. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
