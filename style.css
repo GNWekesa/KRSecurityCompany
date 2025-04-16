@@ -1,238 +1,238 @@
 /* -----------------------------------
-   ✅ Reset & Base Styles
+   ✅ Reset & Base Styles            // Resets default spacing and fonts
 ----------------------------------- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Includes padding/border in total size */
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f7fa;
-  color: #333;
-  line-height: 1.6;
+  font-family: Arial, sans-serif; /* Basic sans-serif font */
+  background-color: #f5f7fa; /* Light background */
+  color: #333; /* Dark text */
+  line-height: 1.6; /* Improved readability */
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  display: block; /* Prevent inline spacing issues */
+  max-width: 100%; /* Prevent overflow */
+  height: auto; /* Keep aspect ratio */
 }
 
 /* -----------------------------------
-   ✅ Layout Containers
+   ✅ Layout Containers              // Centralized max-width layout
 ----------------------------------- */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 1200px; /* Set content max width */
+  margin: 0 auto; /* Center container horizontally */
+  padding: 0 20px; /* Horizontal padding */
 }
 
 /* -----------------------------------
-   ✅ Header & Navbar
+   ✅ Header & Navbar                // Top nav with logo and links
 ----------------------------------- */
 header {
-  background-color: #0A1F44;
-  color: white;
+  background-color: #0A1F44; /* Dark blue background */
+  color: white; /* White text */
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 30px;
-  padding: 15px 20px;
-  background-color: #1f2d4a;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex; /* Horizontal layout */
+  align-items: center; /* Center vertically */
+  justify-content: flex-start; /* Align items left */
+  gap: 30px; /* Space between items */
+  padding: 15px 20px; /* Inner spacing */
+  background-color: #1f2d4a; /* Darker nav color */
+  max-width: 1200px; /* Match container width */
+  margin: 0 auto; /* Center navbar */
 }
 
 .navbar a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: color 0.3s;
+  text-decoration: none; /* Remove underline */
+  color: white; /* Default text color */
+  font-weight: 500; /* Slightly bolder font */
+  transition: color 0.3s; /* Smooth hover effect */
 }
 
 .navbar a:hover,
 .navbar a.active {
-  color: #F1C40F;
+  color: #F1C40F; /* Highlight active and hovered links */
 }
 
 .nav-logo {
-  height: 40px;
-  width: auto;
-  margin-right: 20px;
+  height: 40px; /* Logo height */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Spacing from links */
 }
 
 /* -----------------------------------
-   ✅ About Page
+   ✅ About Page                     // About section layout + gallery
 ----------------------------------- */
 .about-section {
-  background-color: #ffffff;
-  padding: 60px 20px;
+  background-color: #ffffff; /* White background */
+  padding: 60px 20px; /* Spacing around content */
 }
 
 .about-section h1 {
-  font-size: 32px;
-  color: #0A1F44;
-  margin-bottom: 20px;
+  font-size: 32px; /* Section title size */
+  color: #0A1F44; /* Theme blue */
+  margin-bottom: 20px; /* Spacing below title */
 }
 
 .about-section .intro {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 40px;
+  font-size: 16px; /* Paragraph font size */
+  color: #333; /* Text color */
+  margin-bottom: 40px; /* Spacing below intro */
 }
 
 /* Responsive Image Grid */
 .image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
+  display: flex; /* Horizontal layout */
+  flex-wrap: wrap; /* Allow wrap on small screens */
+  justify-content: center; /* Center images */
+  gap: 20px; /* Spacing between items */
+  margin-top: 30px; /* Space above gallery */
 }
 
 .image-gallery figure {
-  margin: 0;
-  text-align: center;
+  margin: 0; /* Reset default margin */
+  text-align: center; /* Center captions */
 }
 
 .image-gallery img {
-  width: 120px;
-  height: 160px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  width: 120px; /* Thumbnail width */
+  height: 160px; /* Thumbnail height */
+  object-fit: cover; /* Cover area without distortion */
+  object-position: center; /* Focus center of image */
+  border-radius: 6px; /* Rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease; /* Hover animation */
 }
 
 .image-gallery img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .image-gallery figcaption {
-  font-size: 12px;
-  color: #555;
-  margin-top: 6px;
-  text-align: center;
+  font-size: 12px; /* Smaller caption text */
+  color: #555; /* Light gray text */
+  margin-top: 6px; /* Space between image and caption */
+  text-align: center; /* Centered text */
 }
 
 /* -----------------------------------
-   ✅ Services Page
+   ✅ Services Page                  // Service section and cards
 ----------------------------------- */
 .services-section {
-  background-color: #e8ecf4;
-  padding: 60px 20px;
+  background-color: #e8ecf4; /* Light blue background */
+  padding: 60px 20px; /* Section spacing */
 }
 
 .services-section h1 {
-  font-size: 32px;
-  margin-bottom: 30px;
+  font-size: 32px; /* Section title */
+  margin-bottom: 30px; /* Spacing below title */
 }
 
 .service {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
+  background-color: #fff; /* White card */
+  padding: 20px; /* Inner spacing */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+  margin-bottom: 30px; /* Space between cards */
 }
 
 .service h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 24px; /* Subheading size */
+  margin-bottom: 10px; /* Space under heading */
 }
 
 /* -----------------------------------
-   ✅ Careers Page
+   ✅ Careers Page                   // Careers form and layout
 ----------------------------------- */
 .careers {
-  padding: 40px 20px;
-  background-color: #ffffff;
-  border-left: 5px solid #F1C40F;
+  padding: 40px 20px; /* Section padding */
+  background-color: #ffffff; /* White background */
+  border-left: 5px solid #F1C40F; /* Yellow edge line */
   border-right: 5px solid #F1C40F;
-  border-radius: 8px;
-  max-width: 900px;
-  margin: 0 auto;
+  border-radius: 8px; /* Rounded corners */
+  max-width: 900px; /* Width limit */
+  margin: 0 auto; /* Centered */
 }
 
 form {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-direction: column; /* Stack form elements */
+  gap: 20px; /* Spacing between fields */
 }
 
 .form-group {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack label and input */
 }
 
 .form-group label {
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #0A1F44;
+  font-weight: 600; /* Bold label */
+  margin-bottom: 8px; /* Space below label */
+  color: #0A1F44; /* Brand color */
 }
 
 .form-group input,
 .form-group textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-  background-color: #f9f9f9;
+  padding: 10px; /* Inner spacing */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 6px; /* Rounded inputs */
+  font-size: 14px; /* Base text size */
+  background-color: #f9f9f9; /* Light background */
 }
 
 button[type="submit"] {
-  background-color: #0A1F44;
-  color: #fff;
-  font-weight: bold;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  background-color: #0A1F44; /* Brand blue */
+  color: #fff; /* White text */
+  font-weight: bold; /* Bold button */
+  padding: 12px 20px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 6px; /* Rounded button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth effect */
 }
 
 button[type="submit"]:hover {
-  background-color: #F1C40F;
-  color: #0A1F44;
+  background-color: #F1C40F; /* Yellow hover */
+  color: #0A1F44; /* Invert text */
 }
 
 /* -----------------------------------
-   ✅ Footer
+   ✅ Footer                        // Footer layout and links
 ----------------------------------- */
 footer {
-  background-color: #0A1F44;
-  color: white;
-  padding: 40px 20px;
-  margin-top: 60px;
-  font-size: 14px;
+  background-color: #0A1F44; /* Deep blue */
+  color: white; /* White text */
+  padding: 40px 20px; /* Footer spacing */
+  margin-top: 60px; /* Space from content */
+  font-size: 14px; /* Text size */
 }
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+  flex-wrap: wrap; /* Allow wrapping on mobile */
+  justify-content: space-between; /* Spread sections */
+  gap: 30px; /* Space between sections */
+  max-width: 1200px; /* Match layout container */
+  margin: 0 auto; /* Centered */
 }
 
 .footer-section {
-  flex: 1 1 250px;
+  flex: 1 1 250px; /* Flexible width */
 }
 
 .footer-section h3 {
-  color: #F1C40F;
+  color: #F1C40F; /* Yellow headers */
   margin-bottom: 15px;
 }
 
 .footer-section ul {
-  list-style: none;
+  list-style: none; /* Remove bullets */
   padding: 0;
 }
 
@@ -247,14 +247,14 @@ footer {
 }
 
 .footer-section ul li a:hover {
-  color: #F1C40F;
+  color: #F1C40F; /* Yellow on hover */
 }
 
 .footer-bottom-bar {
-  border-top: 1px solid #F1C40F;
+  border-top: 1px solid #F1C40F; /* Yellow top border */
   margin-top: 30px;
   padding-top: 15px;
-  text-align: center;
+  text-align: center; /* Centered text */
 }
 
 .footer-bottom-bar a {
@@ -264,24 +264,24 @@ footer {
 }
 
 .footer-bottom-bar a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Underline hover */
 }
 
 /* -----------------------------------
-   ✅ Responsive Fixes
+   ✅ Responsive Fixes              // Adjust for smaller screens
 ----------------------------------- */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Left align */
     gap: 12px;
   }
 
   .footer-container {
-    flex-direction: column;
+    flex-direction: column; /* Stack footer sections */
   }
 
   .image-gallery {
-    justify-content: center;
+    justify-content: center; /* Center images */
   }
 }
